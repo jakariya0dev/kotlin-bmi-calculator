@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:background="@color/btn_bg_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:tint="#fff"
+                android:src="@drawable/ic_baseline_male_24"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+            <TextView
+                android:text="@string/male"
+                android:textSize="32sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:background="@color/btn_bg_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:tint="#fff"
+                android:src="@drawable/ic_baseline_female_24"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+            <TextView
+                android:text="@string/female"
+                android:textSize="32sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/btn_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:text="height"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="0 cm"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="55sp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:min="100"
+            android:max="300"
+            android:progressTint="#fff"
+            android:thumbTint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@color/btn_bg_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#fff"
+                android:text="Weight(kg)"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#fff"
+                android:text="1"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="0dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:src="@drawable/ic_baseline_remove_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@color/btn_bg_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#fff"
+                android:text="Age"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#fff"
+                android:text="1"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="0dp"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:src="@drawable/ic_baseline_remove_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="#1B5E20"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Calculate BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
