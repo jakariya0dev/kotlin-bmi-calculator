@@ -15,6 +15,8 @@
         android:layout_height="0dp">
 
         <LinearLayout
+            android:id="@+id/btn_male_id"
+            android:focusable="true"
             android:clickable="true"
             android:layout_margin="5dp"
             android:background="@color/btn_bg_color"
@@ -25,10 +27,11 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:tint="#fff"
                 android:src="@drawable/ic_baseline_male_24"
                 android:layout_width="55dp"
-                android:layout_height="55dp"/>
+                android:layout_height="55dp"
+                app:tint="#fff" />
+
             <TextView
                 android:text="@string/male"
                 android:textSize="32sp"
@@ -39,6 +42,8 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/btn_female_id"
+            android:focusable="true"
             android:clickable="true"
             android:layout_margin="5dp"
             android:background="@color/btn_bg_color"
@@ -49,10 +54,10 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:tint="#fff"
                 android:src="@drawable/ic_baseline_female_24"
                 android:layout_width="55dp"
-                android:layout_height="55dp"/>
+                android:layout_height="55dp"
+                app:tint="#fff" />
             <TextView
                 android:text="@string/female"
                 android:textSize="32sp"
@@ -81,6 +86,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
+            android:id="@+id/tv_height_id"
+            android:focusable="true"
             android:text="0 cm"
             android:textStyle="bold"
             android:textColor="#fff"
@@ -90,6 +97,8 @@
             android:layout_height="wrap_content"/>
 
         <SeekBar
+            android:id="@+id/seekbar_id"
+            android:focusable="true"
             android:min="100"
             android:max="300"
             android:progressTint="#fff"
@@ -122,14 +131,18 @@
                 android:textAllCaps="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
             <TextView
-                android:textColor="#fff"
-                android:text="1"
-                android:textSize="55sp"
-                android:textStyle="bold"
-                android:textAllCaps="true"
+                android:id="@+id/tv_weight_id"
+                android:focusable="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="55sp"
+                android:textStyle="bold" />
+
             <LinearLayout
 
                 android:orientation="horizontal"
@@ -137,13 +150,16 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_weight_plus_id"
                     android:src="@drawable/ic_baseline_add_24"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/increament" />
                 <Space
                     android:layout_width="16dp"
                     android:layout_height="0dp"/>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_weight_minus_id"
                     android:src="@drawable/ic_baseline_remove_24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -167,6 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:id="@+id/tv_age_id"
                 android:textColor="#fff"
                 android:text="1"
                 android:textSize="55sp"
@@ -181,6 +198,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_age_plus_id"
                     android:src="@drawable/ic_baseline_add_24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -188,6 +206,7 @@
                     android:layout_width="16dp"
                     android:layout_height="0dp"/>
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_age_minus_id"
                     android:src="@drawable/ic_baseline_remove_24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -197,6 +216,7 @@
 
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/btn_calculate_id"
         android:clickable="true"
         android:gravity="center"
         android:layout_margin="5dp"
