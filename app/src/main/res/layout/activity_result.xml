@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#880E4F"
+    android:padding="16dp"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_result_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#006064"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_heading_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are overweight"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/tv_result_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI is 20"
+            android:textColor="#fff"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/tv_tips_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tips: Choose a diet plan and do exercise"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back_id"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:backgroundTint="#F57F17"
+        android:text="@string/calculate_again"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+</RelativeLayout>
